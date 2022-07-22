@@ -1,29 +1,22 @@
 <script>
-  import logo from './assets/svelte.png'
-  import Counter from './lib/Counter.svelte'
+  import Daily from './lib/Daily.svelte'
+  import Footer from './lib/Footer.svelte'
+  import Stats from './lib/Stats.svelte'
+  import Login from './lib/Login.svelte'
+
+
 </script>
 
 <main>
-  <img src={logo} alt="Svelte Logo" />
-  <h1>Hello world!</h1>
-
-  <Counter />
-
-  <p>
-    Visit <a href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte
-    apps.
-  </p>
-
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme">SvelteKit</a> for
-    the officially supported framework, also powered by Vite!
-  </p>
+  <Daily/>
+  <Footer/>
 </main>
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;600&display=swap');
   :root {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Mulish', sans-serif;
+    background: #2f3136;
   }
 
   main {
@@ -38,7 +31,7 @@
   }
 
   h1 {
-    color: #ff3e00;
+    color: white;
     text-transform: uppercase;
     font-size: 4rem;
     font-weight: 100;
